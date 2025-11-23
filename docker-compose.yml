@@ -1,0 +1,16 @@
+services:
+  db:
+    image: timescale/timescaledb-ha:pg16
+    container_name: dex_agg_acd_db
+    environment:
+      POSTGRES_USER: dex_user
+      POSTGRES_PASSWORD: dex_password
+      POSTGRES_DB: dex_acd
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  db_data:
