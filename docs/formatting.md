@@ -1,0 +1,34 @@
+# SQL
+
+-- =============================================================================
+-- <filename>.sql
+--
+-- Purpose
+--   <What this table is for and why it exists. One to three sentences.>
+--
+-- Row semantics
+--   <What one row represents. Clarify entity vs. episode vs. fact.>
+--
+-- Conventions
+--   - <Key normalization rules (e.g., UPPER tickers, zero-padded CIKs).>
+--   - <Timezone or date span policy (e.g., half-open [start, end)).>
+--   - <Immutability/append-only expectations, if any.>
+--
+-- Keys & constraints
+--   - Primary key: <column(s)>
+--   - Natural keys / uniqueness: <notes>
+--   - Checks: <format/quality guards worth calling out>
+--
+-- Relationships
+--   - <FKs this table owns or is expected to receive in downstream tables.>
+--   - <How other tables are expected to join to this one.>
+--
+-- Audit & provenance
+--   <What lineage is (or is not) stored here; where full provenance lives.>
+--
+-- Performance
+--   <Indexes or partitioning choices and the query patterns they serve.>
+--
+-- Change management
+--   <How to extend this schema without breaking downstream (e.g., add-only).>
+-- =============================================================================
